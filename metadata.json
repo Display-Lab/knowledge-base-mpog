@@ -68,7 +68,7 @@
             },
             "koio:hasDocumentation": [
                 {
-                    "@id": "https://raw.githubusercontent.com/Display-Lab/knowledge-base/v1.4/prioritization_algorithms/readme.md",
+                    "@id": "prioritization_algorithms/readme.md",
                     "@type": "koio:Documentation",
                     "dc:title": "prioritization algorithms",
                     "dc:description": "prioritization algorithms documentation."                }
