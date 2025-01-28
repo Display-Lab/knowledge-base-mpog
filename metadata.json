@@ -20,7 +20,7 @@
     "dc:source":"https://github.com/Display-Lab/knowledge-base",
     "koio:hasKnowledge": [
         {
-            "@id": "remote_causal_pathways",
+            "@id": "_:remote_causal_pathways",
             "@type": "koio:Knowledge",
             "dc:description":"These are the causal pathways that are used remotely. Please refer to the manifest.yamal for detail.",
             "implementedBy": {
@@ -33,7 +33,7 @@
             }
         },
         {
-            "@id": "local_causal_pathways",
+            "@id": "_:local_causal_pathways",
             "@type": "koio:Knowledge",
             "dc:description":"This item represents local causal pathways. Please refer to the manifest.yaml file for more detail.",
             "implementedBy": {
@@ -46,7 +46,7 @@
             }
         },
         {
-            "@id": "remote_message_templates",
+            "@id": "_:remote_message_templates",
             "@type": "koio:Knowledge",
             "dc:description":"These are the message templates that are used remotely. Please refer to the manifest.yamal for detail.",
             "implementedBy": {
@@ -59,7 +59,7 @@
             }
         },
         {
-            "@id": "local_message_templates",
+            "@id": "_:local_message_templates",
             "@type": "koio:Knowledge",
             "dc:description":"This item represents local message templates. Please refer to the manifest.yaml file for more detail.",
             "implementedBy": {
@@ -72,7 +72,7 @@
             }
         },
         {
-            "@id": "performance_measures",
+            "@id": "_:performance_measures",
             "@type": "koio:Knowledge",
             "implementedBy": {
                 "@id": "performance_measures/measures.json",
@@ -84,7 +84,7 @@
             }
         },
         {
-            "@id": "prioritization_algorithms",
+            "@id": "_:prioritization_algorithms",
             "@type": "koio:Knowledge",
             "implementedBy": {
                 "@id": "prioritization_algorithms/motivational_potential_model.csv",
@@ -103,7 +103,7 @@
             ]
         },
         {
-            "@id": "comparators",
+            "@id": "_:comparators",
             "@type": "koio:Knowledge",
             "implementedBy": {
                 "@id": "comparators.json",
@@ -115,7 +115,7 @@
             }
         },
         {
-            "@id": "preferences",
+            "@id": "_:preferences",
             "@type": "koio:Knowledge",
             "implementedBy": {
                 "@id": "preferences.json",
