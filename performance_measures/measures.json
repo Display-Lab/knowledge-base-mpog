@@ -1,121 +1,121 @@
 {
-    "@context": {
-      "@vocab": "http://schema.org/",
-      "slowmo": "http://example.com/slowmo#",
-      "csvw": "http://www.w3.org/ns/csvw#",
-      "dc": "http://purl.org/dc/terms/",
-      "PSDO": "http://purl.obolibrary.org/obo/",
-      "slowmo:Measure": "http://example.com/slowmo#Measure",
-      "slowmo:IsAboutPerformer": "http://example.com/slowmo#IsAboutPerformer",
-      "slowmo:ColumnUse": "http://example.com/slowmo#ColumnUse",
-      "slowmo:IsAboutTemplate": "http://example.com/slowmo#IsAboutTemplate",
-      "slowmo:spek": "http://example.com/slowmo#spek",
-      "slowmo:IsAboutCausalPathway": "http://example.com/slowmo#IsAboutCausalPathway",
-      "slowmo:IsAboutOrganization": "http://example.com/slowmo#IsAboutOrganization",
-      "slowmo:IsAboutMeasure": "http://example.com/slowmo#IsAboutMeasure",
-      "slowmo:InputTable": "http://example.com/slowmo#InputTable",
-      "slowmo:WithComparator": "http://example.com/slowmo#WithComparator",
-      "has_part": "http://purl.obolibrary.org/obo/bfo#BFO_0000051",
-      "has_disposition": "http://purl.obolibrary.org/obo/RO_0000091"
+  "@context": {
+    "@vocab": "http://schema.org/",
+    "slowmo": "http://example.com/slowmo#",
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "dc": "http://purl.org/dc/terms/",
+    "PSDO": "http://purl.obolibrary.org/obo/",
+    "slowmo:Measure": "http://example.com/slowmo#Measure",
+    "slowmo:IsAboutPerformer": "http://example.com/slowmo#IsAboutPerformer",
+    "slowmo:ColumnUse": "http://example.com/slowmo#ColumnUse",
+    "slowmo:IsAboutTemplate": "http://example.com/slowmo#IsAboutTemplate",
+    "slowmo:spek": "http://example.com/slowmo#spek",
+    "slowmo:IsAboutCausalPathway": "http://example.com/slowmo#IsAboutCausalPathway",
+    "slowmo:IsAboutOrganization": "http://example.com/slowmo#IsAboutOrganization",
+    "slowmo:IsAboutMeasure": "http://example.com/slowmo#IsAboutMeasure",
+    "slowmo:InputTable": "http://example.com/slowmo#InputTable",
+    "slowmo:WithComparator": "http://example.com/slowmo#WithComparator",
+    "has_part": "http://purl.obolibrary.org/obo/bfo#BFO_0000051",
+    "has_disposition": "http://purl.obolibrary.org/obo/RO_0000091"
+  },
+  "@id": "http://example.com/app#display-lab",
+  "@type": "http://example.com/slowmo#spek",
+  "slowmo:IsAboutOrganization": {
+    "@type": "Organization",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "USA",
+      "addressRegion": "MI",
+      "streetAddress": "DLHS, 1161 NIB, 300 N Ingalls St.",
+      "postalCode": "48109",
+      "name": "DisplayLab"
+    }
+  },
+  "slowmo:IsAboutMeasure": [
+    {
+      "@id": "_:ABX01",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "ABX-01-OB: Antibiotic Timing for Cesarean Delivery",
+      "identifier": "ABX01"
     },
-    "@id": "http://example.com/app#display-lab",
-    "@type": "http://example.com/slowmo#spek",
-    "slowmo:IsAboutOrganization": {
-      "@type": "Organization",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "USA",
-        "addressRegion": "MI",
-        "streetAddress": "DLHS, 1161 NIB, 300 N Ingalls St.",
-        "postalCode": "48109",
-        "name": "DisplayLab"
-      }
+    {
+      "@id": "_:ABX02",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "ABX-02-C: Antibiotic Timing, Open Cardiac",
+      "identifier": "ABX02"
     },
-    "slowmo:IsAboutMeasure": [
-      {
-        "@id": "_:ABX01",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "ABX-01-OB: Antibiotic Timing for Cesarean Delivery",
-        "identifier": "ABX01"
-      },
-      {
-        "@id": "_:ABX02",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "ABX-02-C: Antibiotic Timing, Open Cardiac",
-        "identifier": "ABX02"
-      },
-      {
-        "@id": "_:ABX03",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "ABX-03-C: Antibiotic Re-dosing, Open Cardiac",
-        "identifier": "ABX03"
-      },
-      {
-        "@id": "_:BRAIN01",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "BRAIN-01: Benzodiazepine use in the geriatric population",
-        "identifier": "BRAIN01"
-      },
-      {
-        "@id": "_:BP01",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "BP-01: Low MAP Prevention < 55 (20 minutes)",
-        "identifier": "BP01"
-      },
-      {
-        "@id": "_:BP02",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "BP-02: Avoiding Monitoring Gaps",
-        "identifier": "BP02"
-      },
-      {
-        "@id": "_:BP03",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "BP-03: Low MAP Prevention < 65 (15 minutes)",
-        "identifier": "BP03"
-      },
-      {
-        "@id": "_:BP04",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "BP-04-OB: SBP < 90 in Cesarean Deliveries",
-        "identifier": "BP04"
-      },
-      {
-        "@id": "_:BP05",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "BP-05: Low MAP Avoidance < 55, Induction",
-        "identifier": "BP05"
-      },
-      {
-        "@id": "_:BP06",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "BP-06: Low MAP Prevention < 55 (10 minutes)",
-        "identifier": "BP06"
-      },
-      {
-        "@id": "_:FLUID01",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "FLUID-01-C: Minimizing Colloid Use, Cardiac",
-        "identifier": "FLUID01"
-      },
-      {
-        "@id": "_:FLUID01NC",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "FLUID-01-NC: Minimizing Colloid Use, Non-Cardiac",
-        "identifier": "FLUID01_NC"
-      },
-      {
-        "@id": "_:FLUID02",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "FLUID-02-NC: Minimizing Colloid Use, Pediatrics (Non-Cardiac)",
-        "identifier": "FLUID02"
-      },
-      {
-        "@id": "_:FLUID02_C",
-        "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
-        "dc:title": "FLUID-02-Peds-C: Minimizing Colloid Use, Pediatrics (Cardiac)",
-        "identifier": "FLUID02_C"
-      },
+    {
+      "@id": "_:ABX03",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "ABX-03-C: Antibiotic Re-dosing, Open Cardiac",
+      "identifier": "ABX03"
+    },
+    {
+      "@id": "_:BRAIN01",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "BRAIN-01: Benzodiazepine use in the geriatric population",
+      "identifier": "BRAIN01"
+    },
+    {
+      "@id": "_:BP01",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "BP-01: Low MAP Prevention < 55 (20 minutes)",
+      "identifier": "BP01"
+    },
+    {
+      "@id": "_:BP02",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "BP-02: Avoiding Monitoring Gaps",
+      "identifier": "BP02"
+    },
+    {
+      "@id": "_:BP03",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "BP-03: Low MAP Prevention < 65 (15 minutes)",
+      "identifier": "BP03"
+    },
+    {
+      "@id": "_:BP04",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "BP-04-OB: SBP < 90 in Cesarean Deliveries",
+      "identifier": "BP04"
+    },
+    {
+      "@id": "_:BP05",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "BP-05: Low MAP Avoidance < 55, Induction",
+      "identifier": "BP05"
+    },
+    {
+      "@id": "_:BP06",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "BP-06: Low MAP Prevention < 55 (10 minutes)",
+      "identifier": "BP06"
+    },
+    {
+      "@id": "_:FLUID01",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "FLUID-01-C: Minimizing Colloid Use, Cardiac",
+      "identifier": "FLUID01"
+    },
+    {
+      "@id": "_:FLUID01NC",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "FLUID-01-NC: Minimizing Colloid Use, Non-Cardiac",
+      "identifier": "FLUID01_NC"
+    },
+    {
+      "@id": "_:FLUID02",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "FLUID-02-NC: Minimizing Colloid Use, Pediatrics (Non-Cardiac)",
+      "identifier": "FLUID02"
+    },
+    {
+      "@id": "_:FLUID02_C",
+      "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
+      "dc:title": "FLUID-02-Peds-C: Minimizing Colloid Use, Pediatrics (Cardiac)",
+      "identifier": "FLUID02_C"
+    },
     {
       "@id": "_:GLU01",
       "@type": "http://purl.obolibrary.org/obo/PSDO_0000102",
@@ -362,5 +362,5 @@
       "dc:title": "TRAN-03-Peds: Transfusion Vigilance, Pediatrics",
       "identifier": "TRAN03"
     }
-    ]
-    }  
+  ]
+}
