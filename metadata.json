@@ -27,7 +27,7 @@
             "dc:description": "These are the causal pathways. Please refer to the manifest.yamal for detail.",
             "implementedBy": [
                 {
-                    "@id": "https://github.com/Display-Lab/knowledge-base/tree/v1.4/causal_pathways",
+                    "@id": "https://github.com/Display-Lab/knowledge-base/tree/v1.5/causal_pathways",
                     "@type": [
                         "schema:Dataset"
                     ],
@@ -61,26 +61,22 @@
             }
         },
         {
-            "@id": "remote_message_templates",
+            "@id": "message_templates",
             "@type": "koio:Knowledge",
-            "dc:description": "These are the message templates that are used remotely. Please refer to the manifest.yamal for detail.",
-            "implementedBy": {
-                "@id": "https://github.com/Display-Lab/knowledge-base/tree/v1.4/message_templates",
-                "@type": "schema:Dataset"
-            },
-            "schema:creator": {
-                "@type": "team",
-                "schema:name": "DISPLAY Lab"
-            }
-        },
-        {
-            "@id": "local_message_templates",
-            "@type": "koio:Knowledge",
-            "dc:description": "This item represents local message templates. Please refer to the manifest.yaml file for more detail.",
-            "implementedBy": {
-                "@id": "message_templates",
-                "@type": "schema:Dataset"
-            },
+            "dc:description": "These are the message templates. Please refer to the manifest.yamal for detail.",
+            "implementedBy": [
+                {
+                    "@id": "https://github.com/Display-Lab/knowledge-base/tree/v1.5/message_templates",
+                    "@type": ["schema:Dataset"],
+                    "dc:title": "general message templates"
+                },
+                {
+                    "@id": "message_templates",
+                    "@type": ["schema:Dataset"],
+                    "dc:title": "MPOG-specific message templates"
+                }
+            ],
+            "dependsOn": "manifest",
             "schema:creator": {
                 "@type": "team",
                 "schema:name": "DISPLAY Lab"
@@ -145,7 +141,7 @@
     ],
     "koio:hasDocumentation": [
         {
-            "@id": "https://github.com/Display-Lab/knowledge-base/tree/v1.4/vignettes",
+            "@id": "https://github.com/Display-Lab/knowledge-base/tree/v1.5/vignettes",
             "@type": "koio:Documentation",
             "dc:title": "Vignettes for the Precision Feedback Knowledge Base",
             "dc:description": "The Precision Feedback Knowledge Base has a collection of vignettes that illustrate how the knowledge base can be used by a precision feedback system to prioritize motivating performance information and tailor feedback messages. Each vignette uses a fictional context and providers, called personas, who are representative of some population of providers. The vignette includes narrative description of the function of a precision feedback system, as well as computer-interpretable code and files that can be used to test out the function of the precision feedback system. The narrative part of each vignette is written for clinical feedback system stakeholders, focusing primarily on a researchers and feedback system developers for feedback systems in health care organizations. The purpose of the vignettes is also to increase the findability and transparency of the precision feedback system software to all stakeholders, including healthcare professionals, patients, and communities."
