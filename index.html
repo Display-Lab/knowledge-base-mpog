@@ -92,36 +92,38 @@
             <div class="metadata" id="metadata">
             <h1>Precision Feedback Knowledge Base</h1>
             <p>PFKB is a collection of computable biomedical knowledge for the purpose of processing clinical performance data to identify coaching and appreciation feedback messages that may represent the highest-value performance information an organization has for healthcare professionals to learn to improve and sustain their clinical performance.</p>
-            <p><strong>Id:</strong> Precision-Feedback-Knowledge-Base</p>
+            <p><strong>Id:</strong> <a href="https://github.com/Display-Lab/knowledge-base-mpog/blob/test-readme" target='_blank'> 
+                Precision-Feedback-Knowledge-Base
+            </a></p>
             <p><strong>Identifier:</strong> ark:PrecisionFeedbackKnowledgeBase (PFKB)</p>
-            <p><strong>Type:</strong> <a href="http://kgrid.org/koio#KnowledgeObject">koio:KnowledgeObject</a></p>
+            <p><strong>Type:</strong> <a href="http://kgrid.org/koio#KnowledgeObject" target='_blank'>koio:KnowledgeObject</a></p>
             <p><strong>Version:</strong> v3.0</p>
             <p><strong>Date:</strong> 2024-12-14</p>
             
             <p><strong>License:</strong> 
-                    <a href="LICENSE.txt">
+                    <a href="https://github.com/Display-Lab/knowledge-base-mpog/blob/test-readme/LICENSE.txt" target='_blank'>
                         LICENSE.txt
                     </a></p>
             
             
                 <p><strong>Source:</strong> 
-                    <a href="https://github.com/Display-Lab/knowledge-base">
+                    <a href="https://github.com/Display-Lab/knowledge-base" target='_blank'>
                         https://github.com/Display-Lab/knowledge-base
                     </a>
                 </p>
             
-
+            <hr>
             <h2>Creator Information</h2>
             <p><strong>Name:</strong> 
                  DISPLAY Lab</p>
             <p><strong>Affiliation:</strong> DISPLAY Lab, University of Michigan Medical School</p>
             <p><strong>Email:</strong> 
-                <a href="mailto:zachll@umich.edu">
+                <a href="mailto:zachll@umich.edu" target='_blank'>
                     zachll@umich.edu
                 </a>
             </p>
             <p><strong>Website:</strong> 
-                <a href="https://display.lab.medicine.umich.edu/">
+                <a href="https://display.lab.medicine.umich.edu/" target='_blank'>
                     https://display.lab.medicine.umich.edu/
                 </a>
             </p>
@@ -130,145 +132,231 @@
             
             
             
+            <hr>
             <h2>Knowledge</h2>
             
-                <p><h3> _:remote_causal_pathways</h3></p>
+                <p><h3> causal_pathways</h3></p>
                 <p><strong>Type:</strong> koio:Knowledge</p>
                 
-                    <p><strong>Description:</strong> These are the causal pathways that are used remotely. Please refer to the manifest.yamal for detail.</p>
+                    <p><strong>Description:</strong> These are the causal pathways. Please refer to the manifest.yamal for detail.</p>
+                
+                
                 
                 <p><strong>Implemented by:</strong> 
-                    <a href="https://github.com/Display-Lab/knowledge-base/tree/v1.4/causal_pathways">
-                        https://github.com/Display-Lab/knowledge-base/tree/v1.4/causal_pathways
-                    </a>(type: Dataset)
+                <ul>
+                
+                    <li>
+                    <a href="https://github.com/Display-Lab/knowledge-base/tree/v1.4/causal_pathways" target='_blank'>
+                        general causal pathways
+                    </a>(type: ['schema:Dataset', 'cpo_causal_pathways'])
+                    </li>
+                
+                    <li>
+                    <a href="https://github.com/Display-Lab/knowledge-base-mpog/blob/test-readme/causal_pathways" target='_blank'>
+                        MPOG-specific causal pathways
+                    </a>(type: ['schema:Dataset', 'cpo_causal_pathways'])
+                    </li>
+                
+                </ul>
                 </p>
+                
+                    <p><strong>Depends on:</strong> manifest</p>
+                
                 
                 
                 
                 <b>Creator Information:</b>
+                
                 <p><strong>Name:</strong> 
                      DISPLAY Lab
                 </p>
                 
                 
                 
+                
             
-                <p><h3> _:local_causal_pathways</h3></p>
+                <p><h3> manifest</h3></p>
                 <p><strong>Type:</strong> koio:Knowledge</p>
                 
-                    <p><strong>Description:</strong> This item represents local causal pathways. Please refer to the manifest.yaml file for more detail.</p>
+                    <p><strong>Description:</strong> Knowledge base manifest.</p>
+                
+                
                 
                 <p><strong>Implemented by:</strong> 
-                    <a href="causal_pathways">
-                        causal_pathways
-                    </a>(type: Dataset)
+                <ul>
+                
+                    <li>
+                    <a href="https://github.com/Display-Lab/knowledge-base-mpog/blob/test-readme/manifest.yaml" target='_blank'>
+                        manifest.yaml
+                    </a>(type: schema:MediaObject)
+                    </li>
+                
+                </ul>
                 </p>
                 
                 
                 
+                
                 <b>Creator Information:</b>
+                
                 <p><strong>Name:</strong> 
                      DISPLAY Lab
                 </p>
                 
                 
                 
+                
             
-                <p><h3> _:remote_message_templates</h3></p>
+                <p><h3> remote_message_templates</h3></p>
                 <p><strong>Type:</strong> koio:Knowledge</p>
                 
                     <p><strong>Description:</strong> These are the message templates that are used remotely. Please refer to the manifest.yamal for detail.</p>
                 
+                
+                
                 <p><strong>Implemented by:</strong> 
-                    <a href="https://github.com/Display-Lab/knowledge-base/tree/v1.4/message_templates">
-                        https://github.com/Display-Lab/knowledge-base/tree/v1.4/message_templates
-                    </a>(type: Dataset)
+                <ul>
+                
+                    <li>
+                    <a href="https://github.com/Display-Lab/knowledge-base/tree/v1.4/message_templates" target='_blank'>
+                        message_templates
+                    </a>(type: schema:Dataset)
+                    </li>
+                
+                </ul>
                 </p>
                 
                 
                 
+                
                 <b>Creator Information:</b>
+                
                 <p><strong>Name:</strong> 
                      DISPLAY Lab
                 </p>
                 
                 
                 
+                
             
-                <p><h3> _:local_message_templates</h3></p>
+                <p><h3> local_message_templates</h3></p>
                 <p><strong>Type:</strong> koio:Knowledge</p>
                 
                     <p><strong>Description:</strong> This item represents local message templates. Please refer to the manifest.yaml file for more detail.</p>
                 
+                
+                
                 <p><strong>Implemented by:</strong> 
-                    <a href="message_templates">
+                <ul>
+                
+                    <li>
+                    <a href="https://github.com/Display-Lab/knowledge-base-mpog/blob/test-readme/message_templates" target='_blank'>
                         message_templates
-                    </a>(type: Dataset)
+                    </a>(type: schema:Dataset)
+                    </li>
+                
+                </ul>
                 </p>
                 
                 
                 
+                
                 <b>Creator Information:</b>
+                
                 <p><strong>Name:</strong> 
                      DISPLAY Lab
                 </p>
                 
                 
                 
+                
             
-                <p><h3> _:performance_measures</h3></p>
+                <p><h3> performance_measures</h3></p>
                 <p><strong>Type:</strong> koio:Knowledge</p>
                 
+                
+                
                 <p><strong>Implemented by:</strong> 
-                    <a href="performance_measures/measures.json">
-                        performance_measures/measures.json
-                    </a>(type: DataFile)
+                <ul>
+                
+                    <li>
+                    <a href="https://github.com/Display-Lab/knowledge-base-mpog/blob/test-readme/performance_measures/measures.json" target='_blank'>
+                        measures.json
+                    </a>(type: schema:MediaObject)
+                    </li>
+                
+                </ul>
                 </p>
                 
                 
                 
+                
                 <b>Creator Information:</b>
+                
                 <p><strong>Name:</strong> 
                      DISPLAY Lab
                 </p>
                 
                 
                 
+                
             
-                <p><h3> _:prioritization_algorithms</h3></p>
+                <p><h3> prioritization_algorithms</h3></p>
                 <p><strong>Type:</strong> koio:Knowledge</p>
                 
+                
+                
                 <p><strong>Implemented by:</strong> 
-                    <a href="prioritization_algorithms/motivational_potential_model.csv">
-                        prioritization_algorithms/motivational_potential_model.csv
-                    </a>(type: DataFile)
+                <ul>
+                
+                    <li>
+                    <a href="https://github.com/Display-Lab/knowledge-base-mpog/blob/test-readme/prioritization_algorithms/motivational_potential_model.csv" target='_blank'>
+                        motivational_potential_model.csv
+                    </a>(type: schema:MediaObject)
+                    </li>
+                
+                </ul>
                 </p>
                 
                 
                 
+                
                 <b>Creator Information:</b>
+                
                 <p><strong>Name:</strong> 
                      DISPLAY Lab
                 </p>
                 
                 
                 
+                
             
-                <p><h3> _:comparators</h3></p>
+                <p><h3> comparators</h3></p>
                 <p><strong>Type:</strong> koio:Knowledge</p>
                 
+                
+                
                 <p><strong>Implemented by:</strong> 
-                    <a href="comparators.json">
+                <ul>
+                
+                    <li>
+                    <a href="https://github.com/Display-Lab/knowledge-base-mpog/blob/test-readme/comparators.json" target='_blank'>
                         comparators.json
-                    </a>(type: DataFile)
+                    </a>(type: schema:MediaObject)
+                    </li>
+                
+                </ul>
                 </p>
+                
                 
                 
                 
                 <b>Creator Information:</b>
+                
                 <p><strong>Name:</strong> 
                      DISPLAY Lab
                 </p>
+                
                 
                 
                 
@@ -276,18 +364,29 @@
                 <p><h3> _:preferences</h3></p>
                 <p><strong>Type:</strong> koio:Knowledge</p>
                 
+                
+                
                 <p><strong>Implemented by:</strong> 
-                    <a href="preferences.json">
+                <ul>
+                
+                    <li>
+                    <a href="https://github.com/Display-Lab/knowledge-base-mpog/blob/test-readme/preferences.json" target='_blank'>
                         preferences.json
-                    </a>(type: DataFile)
+                    </a>(type: schema:MediaObject)
+                    </li>
+                
+                </ul>
                 </p>
+                
                 
                 
                 
                 <b>Creator Information:</b>
+                
                 <p><strong>Name:</strong> 
                      DISPLAY Lab
                 </p>
+                
                 
                 
                 
@@ -300,20 +399,17 @@
             
                 <h2>Documentation</h2>
                 
-                    <h3><a href="prioritization_algorithms/readme.md">prioritization algorithms</a></h3>
+                    <h3><a href="https://github.com/Display-Lab/knowledge-base-mpog/blob/test-readme/prioritization_algorithms/readme.md" target='_blank'>prioritization algorithms</a></h3>
                     <p>prioritization algorithms documentation.</p>
                 
-                    <h3><a href="https://github.com/Display-Lab/knowledge-base/tree/v1.4/vignettes">Vignettes for the Precision Feedback Knowledge Base</a></h3>
+                    <h3><a href="https://github.com/Display-Lab/knowledge-base/tree/v1.4/vignettes" target='_blank'>Vignettes for the Precision Feedback Knowledge Base</a></h3>
                     <p>The Precision Feedback Knowledge Base has a collection of vignettes that illustrate how the knowledge base can be used by a precision feedback system to prioritize motivating performance information and tailor feedback messages. Each vignette uses a fictional context and providers, called personas, who are representative of some population of providers. The vignette includes narrative description of the function of a precision feedback system, as well as computer-interpretable code and files that can be used to test out the function of the precision feedback system. The narrative part of each vignette is written for clinical feedback system stakeholders, focusing primarily on a researchers and feedback system developers for feedback systems in health care organizations. The purpose of the vignettes is also to increase the findability and transparency of the precision feedback system software to all stakeholders, including healthcare professionals, patients, and communities.</p>
                 
-                    <h3><a href="readme.md">readme.md</a></h3>
+                    <h3><a href="https://github.com/Display-Lab/knowledge-base-mpog/blob/test-readme/readme.md" target='_blank'>readme.md</a></h3>
                     <p>Knowledge base read me file.</p>
                 
-                    <h3><a href="index.html">Knowledge Object Information Page.</a></h3>
+                    <h3><a href="https://github.com/Display-Lab/knowledge-base-mpog/blob/test-readme/index.html" target='_blank'>Knowledge Object Information Page.</a></h3>
                     <p>Knowledge Object Information Page.</p>
-                
-                    <h3><a href="manifest.yaml">manifest</a></h3>
-                    <p>Knowledge base manifest.</p>
                 
             
         </div>

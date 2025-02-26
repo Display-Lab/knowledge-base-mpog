@@ -1,5 +1,5 @@
 {
-    "@context": "https://kgrid.org/koio/2.0/context",
+    "@context": "https://kgrid.org/koio/2.1/context",
     "@id": "Precision-Feedback-Knowledge-Base",
     "koio:kgrid": "2",
     "@type": "koio:KnowledgeObject",
@@ -16,16 +16,44 @@
         "schema:email": "zachll@umich.edu"
     },
     "dc:publisher": "DISPLAY Lab",
-    "dc:license": "LICENSE.txt",
-    "dc:source":"https://github.com/Display-Lab/knowledge-base",
+    "dc:license": {
+        "@id": "LICENSE.txt"
+    },
+    "dc:source": "https://github.com/Display-Lab/knowledge-base",
     "koio:hasKnowledge": [
         {
-            "@id": "_:remote_causal_pathways",
+            "@id": "causal_pathways",
             "@type": "koio:Knowledge",
-            "dc:description":"These are the causal pathways that are used remotely. Please refer to the manifest.yamal for detail.",
+            "dc:description": "These are the causal pathways. Please refer to the manifest.yamal for detail.",
+            "implementedBy": [
+                {
+                    "@id": "https://github.com/Display-Lab/knowledge-base/tree/v1.4/causal_pathways",
+                    "@type": [
+                        "schema:Dataset"
+                    ],
+                    "dc:title": "general causal pathways"
+                },
+                {
+                    "@id": "causal_pathways",
+                    "@type": [
+                        "schema:Dataset"
+                    ],
+                    "dc:title": "MPOG-specific causal pathways"
+                }
+            ],
+            "dependsOn": "manifest",
+            "schema:creator": {
+                "@type": "team",
+                "schema:name": "DISPLAY Lab"
+            }
+        },
+        {
+            "@id": "manifest",
+            "@type": "koio:Knowledge",
+            "dc:description": "Knowledge base manifest.",
             "implementedBy": {
-                "@id": "https://github.com/Display-Lab/knowledge-base/tree/v1.4/causal_pathways",
-                "@type": "Dataset"
+                "@id": "manifest.yaml",
+                "@type": "schema:MediaObject"
             },
             "schema:creator": {
                 "@type": "team",
@@ -33,25 +61,12 @@
             }
         },
         {
-            "@id": "_:local_causal_pathways",
+            "@id": "remote_message_templates",
             "@type": "koio:Knowledge",
-            "dc:description":"This item represents local causal pathways. Please refer to the manifest.yaml file for more detail.",
-            "implementedBy": {
-                "@id": "causal_pathways",
-                "@type": "Dataset"
-            },
-            "schema:creator": {
-                "@type": "team",
-                "schema:name": "DISPLAY Lab"
-            }
-        },
-        {
-            "@id": "_:remote_message_templates",
-            "@type": "koio:Knowledge",
-            "dc:description":"These are the message templates that are used remotely. Please refer to the manifest.yamal for detail.",
+            "dc:description": "These are the message templates that are used remotely. Please refer to the manifest.yamal for detail.",
             "implementedBy": {
                 "@id": "https://github.com/Display-Lab/knowledge-base/tree/v1.4/message_templates",
-                "@type": "Dataset"
+                "@type": "schema:Dataset"
             },
             "schema:creator": {
                 "@type": "team",
@@ -59,12 +74,12 @@
             }
         },
         {
-            "@id": "_:local_message_templates",
+            "@id": "local_message_templates",
             "@type": "koio:Knowledge",
-            "dc:description":"This item represents local message templates. Please refer to the manifest.yaml file for more detail.",
+            "dc:description": "This item represents local message templates. Please refer to the manifest.yaml file for more detail.",
             "implementedBy": {
                 "@id": "message_templates",
-                "@type": "Dataset"
+                "@type": "schema:Dataset"
             },
             "schema:creator": {
                 "@type": "team",
@@ -72,11 +87,11 @@
             }
         },
         {
-            "@id": "_:performance_measures",
+            "@id": "performance_measures",
             "@type": "koio:Knowledge",
             "implementedBy": {
                 "@id": "performance_measures/measures.json",
-                "@type": "DataFile"
+                "@type": "schema:MediaObject"
             },
             "schema:creator": {
                 "@type": "team",
@@ -84,11 +99,11 @@
             }
         },
         {
-            "@id": "_:prioritization_algorithms",
+            "@id": "prioritization_algorithms",
             "@type": "koio:Knowledge",
             "implementedBy": {
                 "@id": "prioritization_algorithms/motivational_potential_model.csv",
-                "@type": "DataFile"
+                "@type": "schema:MediaObject"
             },
             "schema:creator": {
                 "@type": "team",
@@ -99,15 +114,16 @@
                     "@id": "prioritization_algorithms/readme.md",
                     "@type": "koio:Documentation",
                     "dc:title": "prioritization algorithms",
-                    "dc:description": "prioritization algorithms documentation."                }
+                    "dc:description": "prioritization algorithms documentation."
+                }
             ]
         },
         {
-            "@id": "_:comparators",
+            "@id": "comparators",
             "@type": "koio:Knowledge",
             "implementedBy": {
                 "@id": "comparators.json",
-                "@type": "DataFile"
+                "@type": "schema:MediaObject"
             },
             "schema:creator": {
                 "@type": "team",
@@ -119,7 +135,7 @@
             "@type": "koio:Knowledge",
             "implementedBy": {
                 "@id": "preferences.json",
-                "@type": "DataFile"
+                "@type": "schema:MediaObject"
             },
             "schema:creator": {
                 "@type": "team",
@@ -128,7 +144,6 @@
         }
     ],
     "koio:hasDocumentation": [
-
         {
             "@id": "https://github.com/Display-Lab/knowledge-base/tree/v1.4/vignettes",
             "@type": "koio:Documentation",
@@ -136,23 +151,16 @@
             "dc:description": "The Precision Feedback Knowledge Base has a collection of vignettes that illustrate how the knowledge base can be used by a precision feedback system to prioritize motivating performance information and tailor feedback messages. Each vignette uses a fictional context and providers, called personas, who are representative of some population of providers. The vignette includes narrative description of the function of a precision feedback system, as well as computer-interpretable code and files that can be used to test out the function of the precision feedback system. The narrative part of each vignette is written for clinical feedback system stakeholders, focusing primarily on a researchers and feedback system developers for feedback systems in health care organizations. The purpose of the vignettes is also to increase the findability and transparency of the precision feedback system software to all stakeholders, including healthcare professionals, patients, and communities."
         },
         {
-          "@id": "readme.md",
-          "@type": "koio:Documentation",
-          "dc:title": "readme.md",
-          "dc:description": "Knowledge base read me file."
+            "@id": "readme.md",
+            "@type": "koio:Documentation",
+            "dc:title": "readme.md",
+            "dc:description": "Knowledge base read me file."
         },
         {
-          "@id": "index.html",
-          "@type": "koio:Documentation",
-          "dc:title": "Knowledge Object Information Page.",
-          "dc:description": "Knowledge Object Information Page."
-        },
-        {
-          "@id": "manifest.yaml",
-          "@type": "koio:Documentation",
-          "dc:title": "manifest",
-          "dc:description": "Knowledge base manifest."
+            "@id": "index.html",
+            "@type": "koio:Documentation",
+            "dc:title": "Knowledge Object Information Page.",
+            "dc:description": "Knowledge Object Information Page."
         }
-
     ]
 }
