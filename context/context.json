@@ -1,7 +1,7 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "caudal_pathway": {
+        "causal_pathway": {
             "@id": "obo:cpo_0000029"
         },
         "performance_summary_display_template": {
