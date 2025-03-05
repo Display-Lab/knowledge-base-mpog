@@ -55,9 +55,24 @@ The knowledge base contains files on a spectrum of developmental states, from ro
 
 |Release Pair| Knowledge Base Version | Software Pipeline Version | 
 |-|-|-|
-| deprecated | 1.0.1 | 1.2.2 |
-| 6/14/23 | 1.1.0 | *todo* |
+| 1/17/25 | 1.0.0 | 1.1.0 |
+| 1/28/25 | 2.0.0 | 1.1.0 |
+| 2/27/25 | 3.0.0 | 1.2.0 |
+| 3/5/25 | 3.1.0 | 1.2.0 |
 
+## Create a new release
+To create a new release for updated knowledge base, follow the following steps:
+- Update version in metadata
+- Regenerate information page using [KGrid SDK](https://github.com/kgrid/python-sdk)
+    ```
+    kgrid information-page --metadata-path metadata.json --output index.html
+    ```
+- Create a new release on github with a tag that matches the new version
+- Package the knowledge base using KGrid SDK
+    ```
+    kgrid package --metadata-path metadata.json  --nested  
+    ``` 
+- Attach the package to the new release
 ## Version
 1.1.1
 
