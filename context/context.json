@@ -1,19 +1,19 @@
 {
     "@context": {
         "obo": "http://purl.obolibrary.org/obo/",
-        "causal_pathway": {
+        "cpo_causal_pathway": {
             "@id": "obo:cpo_0000029"
         },
-        "performance_summary_display_template": {
+        "psdo_performance_summary_display_template": {
             "@id": "obo:PSDO_0000002"
         },
-        "performance_measure_content": {
+        "psdo_performance_measure_content": {
             "@id": "obo:PSDO_0000102"
         },
-        "comparator_content": {
+        "psdo_comparator_content": {
             "@id": "obo:PSDO_0000093"
         },
-        
+
         "cpo_0000047": {
             "@id": "http://purl.obolibrary.org/obo/cpo_0000047"
         },
